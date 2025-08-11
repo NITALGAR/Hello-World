@@ -3,11 +3,10 @@ from tkinter import messagebox
 from string import ascii_uppercase
 
 def center_window(window, width=300, height=200):
-    # get screen width and height
+
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
 
-    # calculate position x and y coordinates
     x = (screen_width/2) - (width/2)
     y = (screen_height/2) - (height/2)
     window.geometry('%dx%d+%d+%d' % (width, height, x, y))
@@ -100,15 +99,8 @@ for i in range(3):
             idx += 1
         else:
             continue
-
-
-
-
-
-
+            
 root.withdraw()
-
-
 
 start_menu = Tk()
 start_menu.title("Start Menu")
@@ -122,6 +114,5 @@ word_entry = Entry(start_menu, font=('Josefin Sans', 15), justify=CENTER)
 word_entry.pack(pady=10, ipady=5) 
 start_btn =Button(start_menu, text="START", font=('Josefin Sans', 15), justify=CENTER, command=start_game)
 start_btn.pack(pady=10) 
-
 
 start_menu.mainloop()
