@@ -37,8 +37,7 @@ def second_degree():
 win = Tk()
 win.geometry("600x600")
 win.title("Equation solver")
-icon = PhotoImage(file="math.png")
-win.iconphoto(True,icon)
+
 
 message_a = Label(win,
                   text="Enter the coefficient a:",
