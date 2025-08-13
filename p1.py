@@ -103,13 +103,6 @@ for i in range(3):
             btn.config(command=lambda x=lettters[idx].lower(), button=btn: check_letter(x, button))
             btn.grid(row=i, column=j, padx=2, pady=2)
             idx += 1
-<<<<<<< HEAD:p1.py
-
-=======
-        else:
-            continue
-            
->>>>>>> 18167cf8d6c29f97067e7a93b4a5cdd33b63f729:p.py
 root.withdraw()
 
 start_menu = Tk()
